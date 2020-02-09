@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+}
+
+#game {
+  position: relative;
+
+  width: 100%;
+  height: 100vh;
+
+  background: url("img/space.png");
+  background-size: cover;
+  overflow: hidden;
+}
+
+#ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100px;
+
+  background: url("img/wall.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+#player {
+  position: absolute;
+  bottom: 400px;
+  left: 400px;
+
+  width: 100px;
+  height: 100px;
+
+  background: url("img/cat.png");
+  background-size: cover;
+
+  transition: 2s;
+  transition-timing-function: ease-in;
+}
+
+.eagle {
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+
+  width: 60px;
+  height: 60px;
+
+  background: url("img/pizza.png");
+  background-size: cover;
+}
+
+.donut {
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+
+  width: 200px;
+  height: 200px;
+
+  background: url("img/donut.png");
+  background-size: cover;
+}
+
+#gameover{
+  position: absolute;
+  color: #fecc01;
+  margin-top: 300px;
+  margin-left: 41%;
+  font-size: xx-large;
+  font-family: 'Press Start 2P', cursive;
+}
